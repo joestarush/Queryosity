@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langchain-google-genai
+python-dotenv
+faiss-cpu
+PyPDF2
+bcrypt==4.3.0
+
