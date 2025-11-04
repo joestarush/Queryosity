@@ -1,4 +1,5 @@
 fastapi
+passlib
 uvicorn
 langchain
 langchain-community
