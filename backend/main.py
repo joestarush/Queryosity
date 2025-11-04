@@ -8,10 +8,14 @@ from backend.core.config import settings
 import os, shutil, json
 
 app = FastAPI(title="Knowledge-Base Search Engine")
-
+origins = [
+    "http://localhost:5173",    # Vite dev
+    "http://localhost:3000",    # CRA dev
+    "https://queryosity-1.onrender.com"                   # if any
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )
