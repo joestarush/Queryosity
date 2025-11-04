@@ -1,5 +1,6 @@
 fastapi
 python-jose
+langchain-text-splitters
 passlib
 uvicorn
 langchain
