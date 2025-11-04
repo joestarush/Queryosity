@@ -1,11 +1,11 @@
 
-const API_BASE = (process.env.REACT_APP_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
+const API_BASE_URL = 'https://queryosity.onrender.com'; 
 
 
 export const api = {
   register: async (username, password) => {
     const formData = new FormData();
-    formData.append('username', username);
+    formData.append('username', username);  
     formData.append('password', password);
     const response = await fetch(`${API_BASE_URL}/register`, {
       method: 'POST',
